@@ -1,0 +1,16 @@
+.board{
+    display: grid;
+    grid-template-columns: 128px 128px 128px;
+    grid-gap: 5px;
+    background-color: black;
+    width: fit-content;
+}
+.board * {
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+    background: white;
+}
+.gamespace{
+    display: flex;
+}
