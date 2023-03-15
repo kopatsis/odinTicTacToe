@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="name">Tic Tac Toe</div>
+    <form method="post" action="">
+        <div>Player for X:</div>
+        <input class="userX" type="radio" id="userX" name="statX" value="userX" checked="true">
+        <label class="userX" for="userX">User</label><br>
+        <input class="compX" type="radio" id="compX" name="statX" value="compX">
+        <label class="compX" for="compX">Computer</label><br>
+    </form>
+    <form method="post" action="">
+        <div>Player for O:</div>
+        <input class="userO" type="radio" id="userO" name="statO" value="userO" checked="true">
+        <label class="userO" for="userO">User</label><br>
+        <input class="compO" type="radio" id="compO" name="statO" value="compO">
+        <label class="compO" for="compO">Computer</label><br>
+    </form>
+    <div class="gamespace">
+        <button class="start">Start</button>
+        <button class="reset">Reset</button>
+        <label class="difficulty" for="diff">CPU Difficulty:</label>
+        <select id="diff"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select>
+        <div class="announce"></div>
+    </div>
+    <div class="board">
+        <div class="area 1">
+            <img src="N.jpeg"/>
+        </div>
+        <div class="area 2">
+            <img src="N.jpeg"/>
+        </div>
+        <div class="area 3">
+            <img src="N.jpeg"/>
+        </div>
+        <div class="area 4">
+            <img src="N.jpeg"/>
+        </div>
+        <div class="area 5">
+            <img src="N.jpeg"/>
+        </div>
+        <div class="area 6">
+            <img src="N.jpeg"/>
+        </div>
+        <div class="area 7">
+            <img src="N.jpeg"/>
+        </div>
+        <div class="area 8">
+            <img src="N.jpeg"/>
+        </div>
+        <div class="area 9">
+            <img src="N.jpeg"/>
+        </div>
+    </div>
+    
+</body>
+
+<style>
+    .board{
+        display: grid;
+        grid-template-columns: 128px 128px 128px;
+        grid-gap: 5px;
+        background-color: black;
+        width: fit-content;
+    }
+    .board * {
+        width: 128px;
+        height: 128px;
+        cursor: pointer;
+        background: white;
+    }
+    .gamespace{
+        display: flex;
+    }
+</style>
+
+</html>
