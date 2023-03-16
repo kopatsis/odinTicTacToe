@@ -49,7 +49,7 @@ const gameboard = (function(){
         announce.textContent = `${sign} wins the game!`;
     }
     var clearBoard = () => {
-        squares.forEach(square => square.childNodes[1].src = "./N.jpeg");
+        squares.forEach(square => square.childNodes[1].src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=");
         announce.textContent = "";
     }
     var reset = () => {

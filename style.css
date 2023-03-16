@@ -2,15 +2,57 @@
     display: grid;
     grid-template-columns: 128px 128px 128px;
     grid-gap: 5px;
-    background-color: black;
     width: fit-content;
+    background-color: black;
 }
 .board * {
     width: 128px;
     height: 128px;
     cursor: pointer;
-    background: white;
+    background: rgba(85, 151, 148, 1);
 }
 .gamespace{
     display: flex;
+}
+.name{
+    color: aliceblue;
+
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+html{
+    background: rgba(85, 151, 148, 1);
+    height: 100%;
+}
+button{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.choosers{
+    display: flex;
+}
+#diff{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+option{
+    background: transparent;
 }
