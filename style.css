@@ -1,22 +1,32 @@
+:root{
+    --my-color: rgba(85, 151, 148, 1);
+    --my-size: min(18px, 3.8vw);
+    --bottoms: min(12px, 2.5vw);
+}
+
 .board{
     display: grid;
-    grid-template-columns: 128px 128px 128px;
+    grid-template-columns: min(128px, 30vw) min(128px, 30vw) min(128px, 30vw);
     grid-gap: 5px;
     width: fit-content;
-    background-color: black;
+    background-color: aliceblue;
+    margin-bottom: var(--bottoms);
 }
 .board * {
-    width: 128px;
-    height: 128px;
+    width: min(128px, 30vw);
+    height: min(128px, 30vw);
     cursor: pointer;
-    background: rgba(85, 151, 148, 1);
+    background: var(--my-color);
 }
 .gamespace{
     display: flex;
+    margin-bottom: var(--bottoms);
 }
 .name{
-    color: aliceblue;
-
+    font-size: min(36px, 7.6vw);
+    font-weight: bold;
+    margin-bottom: var(--bottoms);
+    margin-top: var(--bottoms);
 }
 body {
     height: 100%;
@@ -28,10 +38,11 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-size: var(--my-size);
 }
 
 html{
-    background: rgba(85, 151, 148, 1);
+    background: var(--my-color);
     height: 100%;
 }
 button{
@@ -41,9 +52,11 @@ button{
     border: 2px solid aliceblue;
     border-radius: 5px;
     cursor: pointer;
+    font-size: var(--my-size);
 }
 .choosers{
     display: flex;
+    margin-bottom: var(--bottoms);
 }
 #diff{
     color: aliceblue;
@@ -52,7 +65,15 @@ button{
     border: 2px solid aliceblue;
     border-radius: 5px;
     cursor: pointer;
+    font-size: var(--my-size);
 }
 option{
-    background: transparent;
+    background: var(--my-color);
+    font-size: var(--my-size);
+}
+form{
+    padding: 0px min(18px, 3.8vw);
+}
+.userX, .compX, .userO, .compO{
+    cursor: pointer;
 }
